@@ -183,7 +183,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $DBS->query("DROP TABLE IF EXISTS `yunbbs_users`");
         $DBS->query("DROP TABLE IF EXISTS `yunbbs_favorites`");
         $DBS->query("DROP TABLE IF EXISTS `yunbbs_qqweibo`");
-        $DBM->query("DROP TABLE IF EXISTS `yunbbs_weibo`");
+        $DBS->query("DROP TABLE IF EXISTS `yunbbs_weibo`");
         
         $tip3 = '所有数据已删除';
         header('location: /install');
